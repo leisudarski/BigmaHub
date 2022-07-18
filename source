@@ -1,0 +1,221 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "BigmaHub V0.2", HidePremium = false, IntroText = "BigmaHub V0.2" , SaveConfig = true, ConfigFolder = "BigmaHubConfig"})
+
+--Main
+local MainTab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local MainSection = MainTab:AddSection({
+	Name = "Main Credits"
+})
+
+MainTab:AddButton({
+	Name = "Created By BigmaPlays#8401",
+	Callback = function()
+      		print("BigmaPlays#8401")
+  	end    
+})
+
+MainTab:AddButton({
+	Name = "Join My Discord! (Click,then press F9)",
+	Callback = function()
+      		print("https://discord.gg/TV2zbBn47M")
+  	end    
+})
+
+--Hubs
+local HubsTab = Window:MakeTab({
+	Name = "Hubs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local HubsSection = HubsTab:AddSection({
+	Name = "Fe Hubs"
+})
+
+HubsTab:AddButton({
+	Name = "Lost Point FeHub (FE)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JunglePush/LostPoint/main/LostPointScript"))()
+  	end    
+})
+
+HubsTab:AddButton({
+	Name = "Ultimate Trolling Hub | UTG V3 (FE)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Scripts/main/UTG%20V3%20RAW"))()
+  	end    
+})
+
+HubsTab:AddButton({
+	Name = "British Hub V6 (FE)",
+	Callback = function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/YourLocalNzi/Ye/main/BHob6"),true))()
+  	end    
+})
+
+local GameHubsSection = HubsTab:AddSection({
+	Name = "Game Hubs"
+})
+
+--GameHubs (Same Section)
+HubsTab:AddButton({
+	Name = "Vape V4 (BedWars)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+
+HubsTab:AddButton({
+	Name = "Future Hub (BedWars)",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+
+  	end    
+})
+
+
+HubsTab:AddButton({
+	Name = "Rise Hub (BedWars)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/RiseForRoblox/main/main.lua", true))()
+  	end    
+})
+
+HubsTab:AddButton({
+	Name = "String Hub (BloxFruits)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/StringV2/StringHub/main/BF.txt", true))()
+  	end    
+})
+
+
+HubsTab:AddButton({
+	Name = "ZA Hub (Zobie Attack)",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/crazyfuy/ghost-hub/main/Loader.lua'))()
+  	end    
+})
+
+
+HubsTab:AddButton({
+	Name = "DHHub (Da Hood)",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
+  	end    
+})
+
+
+HubsTab:AddButton({
+	Name = "GKS Hub (Goal Kick Simulator ⚽️)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/Scripts/main/GoalKickSimulator"))()
+  	end    
+})
+
+
+HubsTab:AddButton({
+	Name = "SSS Hub (Sonic Speed Simulator - KEY NEDDED = (https://discord.com/invite/FcFDSn5epP)",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/big-balla-script-maka/free-scripts/main/Sonic.lua'))()
+  	end    
+})
+
+
+HubsTab:AddButton({
+	Name = "More Comming Soon!",
+	Callback = function()
+      		print("Comming Soon!")
+  	end    
+})
+
+
+--Scripts
+local ScriptsTab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local ScriptsSection = ScriptsTab:AddSection({
+	Name = "Fe Scripts"
+})
+
+ScriptsTab:AddButton({
+	Name = "Nullware V3 FE script",
+	Callback = function()
+        local LocalPlayer = game:GetService("Players").LocalPlayer
+        local Heartbeat = game:GetService("RunService").Heartbeat
+        
+        Heartbeat:Connect(function()
+            LocalPlayer.MaximumSimulationRadius = math.huge
+            sethiddenproperty(LocalPlayer, "SimulationRadius", math.huge)
+        end)
+        -- Script above is a fix to limbs falling --
+        
+        -- Nullware Hub V3 | --
+        getgenv().Theme = "Purple" -- To change the UI Theme, set this to one of the following options: "Red", "Purple", "Blue", "Green", "Yellow"
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
+  	end    
+})
+
+ScriptsTab:AddButton({
+	Name = "C00lKid GUI",
+	Callback = function()
+        loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+  	end    
+})
+
+ScriptsTab:AddButton({
+	Name = "FE REPLICATION UI",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/rE9S3N45'),true))()
+  	end    
+})
+
+
+ScriptsTab:AddButton({
+	Name = "Fe Creepy Walker Script",
+	Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/Cj2Tm82A'))()
+  	end    
+})
+
+local Scripts2Section = ScriptsTab:AddSection({
+	Name = "Scripts"
+})
+
+ScriptsTab:AddButton({
+	Name = "Comming Soon!",
+	Callback = function()
+      		print("Comming Soon!")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Comming Soon!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab = Window:MakeTab({
+	Name = "Comming Soon!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab = Window:MakeTab({
+	Name = "Comming Soon!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab = Window:MakeTab({
+	Name = "Comming Soon!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
